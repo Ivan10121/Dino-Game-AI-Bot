@@ -75,11 +75,11 @@ class GeneticAlgorithm:
         for i in range(int(self.popsize*0.3)):
             offspring.append(self.mutation(self.population[idxs[0]]))
 
-        # 40% mutate from a random choice amoung the 5% of the best genomes
+        # 40% mutate from a random choice among the 5% of the best genomes
         for i in range(int(self.popsize*.4)):
             offspring.append(self.mutation(self.population[np.random.choice(idxs[:int(self.popsize*0.05)])]))
 
-        # 20% crossover between 2 choices amoung the 5% of the best genomes
+        # 20% crossover between 2 choices among the 5% of the best genomes
         for i in range(int(self.popsize*.2)):
             p1 = self.population[np.random.choice(idxs[:int(self.popsize*0.05)])]
             p2 = self.population[np.random.choice(idxs[:int(self.popsize*0.05)])]
