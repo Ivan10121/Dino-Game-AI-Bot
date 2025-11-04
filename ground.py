@@ -1,5 +1,7 @@
-from GameObject import GameObject
 import pygame
+
+from GameObject import GameObject
+
 
 class Ground(GameObject):
     def __init__(self):

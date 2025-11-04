@@ -1,7 +1,9 @@
-import pygame
-from GameObject import GameObject
-from brain import Brain
 import numpy as np
+import pygame
+
+from brain import Brain
+from GameObject import GameObject
+
 
 class Dino(GameObject):
     def __init__(self,genome):

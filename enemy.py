@@ -1,6 +1,8 @@
-from GameObject import GameObject
-from numpy import random
 import pygame
+from numpy import random
+
+from GameObject import GameObject
+
 
 class Enemy(GameObject):
     def __init__(self):
