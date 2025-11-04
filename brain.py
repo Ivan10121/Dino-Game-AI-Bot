@@ -1,7 +1,5 @@
 import numpy as np
 
-import GA
-
 
 class Brain():
     def __init__(self,genome):
