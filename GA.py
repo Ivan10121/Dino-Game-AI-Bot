@@ -39,7 +39,8 @@ class GeneticAlgorithm:
         else:
             return i2
     
-    def crossover(self, genoma1, genoma2):
+    @staticmethod
+    def crossover(genoma1, genoma2):
         offspring = copy.deepcopy(genoma1)
         Ncrossovers = np.random.randint(1,5)
         for i in range(Ncrossovers):
@@ -50,7 +51,8 @@ class GeneticAlgorithm:
         return offspring
     
 
-    def mutation(self,genoma):
+    @staticmethod
+    def mutation(genoma):
         offspring = copy.deepcopy(genoma)
         Nmutations = np.random.randint(0,5)
         for i in range(Nmutations):
@@ -91,7 +93,6 @@ class GeneticAlgorithm:
         return offspring
 
     
-
    
 
 

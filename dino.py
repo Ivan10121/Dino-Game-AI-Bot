@@ -58,7 +58,8 @@ class Dino(GameObject):
         if self.alive:
             screen.blit(self.sprite, (self.x + self.sprite_offset[0], self.y + self.sprite_offset[1]))
 
-    def f(self,x):
+    @staticmethod
+    def f(x):
         return (-4 * x * (x - 1)) * 172
     
     def update(self,next_obstacle_info,speed):

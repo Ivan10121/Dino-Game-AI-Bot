@@ -42,6 +42,7 @@ class Brain():
         self.outputs = np.dot(self.output_layer_weights.T, hidden_outputs) + self.output_layer_bias
         self.outputs = self.ReLU(self.outputs)
 
-    def ReLU(self, x):
+    @staticmethod
+    def ReLU(x):
         return np.maximum(0, x)
 
