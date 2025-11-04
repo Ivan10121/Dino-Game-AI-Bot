@@ -1,4 +1,3 @@
-from Game import Game
 import pygame
 from simulation import Simulation
 
