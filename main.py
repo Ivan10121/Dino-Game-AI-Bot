@@ -1,4 +1,5 @@
 import pygame
+
 from simulation import Simulation
 
 pygame.init()
