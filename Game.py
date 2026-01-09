@@ -1,7 +1,9 @@
-from dino import Dino
 import pygame
-from enemy import Cactus,Bird
+
+from dino import Dino
+from enemy import Bird, Cactus
 from ground import Ground
+
 
 class Game:
     def __init__(self,screen):

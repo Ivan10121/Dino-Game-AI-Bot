@@ -1,12 +1,15 @@
 
-import pygame
-from dino import Dino
-from enemy import Cactus, Bird
-from ground import Ground
-from GA import GeneticAlgorithm
-import time
 import random
+import time
+
 import numpy as np
+import pygame
+
+from dino import Dino
+from enemy import Bird, Cactus
+from GA import GeneticAlgorithm
+from ground import Ground
+
 
 class Simulation:
     def __init__(self,screen):   

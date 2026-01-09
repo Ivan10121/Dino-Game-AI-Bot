@@ -1,5 +1,6 @@
-from Game import Game
 import pygame
+
+from Game import Game
 from simulation import Simulation
 
 pygame.init()
